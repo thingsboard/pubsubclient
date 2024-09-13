@@ -92,7 +92,8 @@
 class PubSubClient : public Print {
 private:
    Client* _client;
-   uint8_t* buffer;
+   uint8_t* receive_buffer;
+   uint8_t* send_buffer;
    uint16_t bufferSize;
    uint16_t keepAlive;
    uint16_t socketTimeout;
